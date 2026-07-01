@@ -1,10 +1,10 @@
 # 🚀 XUI.ONE Admin API Examples
 
-![GitHub repo size](https://img.shields.io/github/repo-size/yourname/xui-one-admin-api-examples?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/rootwcore/xui-one-admin-api-examples?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Examples-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge\&logo=php\&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Examples-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
 > A clean, community-friendly reference repository for developers looking for **XUI.ONE Admin API actions, examples, and starter clients**.
 
@@ -16,16 +16,15 @@ This repository includes a categorized **XUI.ONE Admin API action reference**, r
 
 ## ✨ What is included?
 
-- 📚 Categorized Admin API action reference
-- 🧪 Ready-to-run cURL commands
-- 🐘 PHP API client and examples
-- 🐍 Python API client and examples
-- 🟨 JavaScript / Node.js examples
-- 📮 Postman collection
-- 🔐 Security checklist
-- 🧯 Troubleshooting guide
-- 🧰 GitHub-ready community files: `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, issue templates, and PR template
-- 🪟 Windows helper scripts for installing Git and uploading the repo
+* 📚 Categorized Admin API action reference
+* 🧪 Ready-to-run cURL commands
+* 🐘 PHP API client and examples
+* 🐍 Python API client and examples
+* 🟨 JavaScript / Node.js examples
+* 📮 Postman collection
+* 🔐 Security checklist
+* 🧯 Troubleshooting guide
+* 🧰 GitHub-ready community files: `LICENSE`, `SECURITY.md`, `CONTRIBUTING.md`, issue templates, and PR template
 
 ---
 
@@ -40,9 +39,6 @@ xui-one-admin-api-examples/
 ├── CONTRIBUTING.md
 ├── .gitignore
 ├── .env.example
-├── INSTALL_GIT_WINDOWS.bat
-├── CHECK_GIT_WINDOWS.bat
-├── UPLOAD_TO_GITHUB_WINDOWS.bat
 ├── docs/
 │   ├── API_ACTIONS.md
 │   ├── SETUP_ACCESS_CODE.md
@@ -125,29 +121,29 @@ Example:
 https://PANEL-DOMAIN:9000/ACCESSCODE/?api_key=YOUR_ADMIN_API_KEY&action=get_lines
 ```
 
-| Field | Description |
-|---|---|
-| `PANEL-DOMAIN` | Your XUI.ONE panel domain or IP address |
-| `9000` | HTTPS panel port. It may be different on your installation |
-| `ACCESSCODE` | The access code created for Admin API access |
-| `api_key` | API key generated from the admin profile |
-| `action` | The Admin API action to execute |
+| Field          | Description                                                |
+| -------------- | ---------------------------------------------------------- |
+| `PANEL-DOMAIN` | Your XUI.ONE panel domain or IP address                    |
+| `9000`         | HTTPS panel port. It may be different on your installation |
+| `ACCESSCODE`   | The access code created for Admin API access               |
+| `api_key`      | API key generated from the admin profile                   |
+| `action`       | The Admin API action to execute                            |
 
 ---
 
 ## 🧩 Featured action groups
 
-| Group | Example actions |
-|---|---|
-| 👤 Users | `get_users`, `get_user`, `create_user`, `edit_user`, `delete_user` |
-| 📺 Lines | `get_lines`, `get_line`, `create_line`, `edit_line`, `disable_line`, `enable_line` |
-| 📡 Streams | `get_streams`, `get_stream`, `create_stream`, `start_stream`, `stop_stream` |
-| 🎬 Movies | `get_movies`, `get_movie`, `create_movie`, `start_movie`, `stop_movie` |
-| 📚 Series | `get_series_list`, `get_series`, `create_series`, `edit_series` |
-| 🧱 Bouquets | `get_bouquets`, `get_bouquet`, `create_bouquet`, `edit_bouquet` |
-| 🖥️ Servers | `get_servers`, `get_server`, `get_server_stats`, `reload_nginx` |
-| 🧾 Logs | `activity_logs`, `live_connections`, `client_logs`, `stream_errors` |
-| 🛡️ Blocks | `get_blocked_ips`, `add_blocked_ip`, `flush_blocked_ips` |
+| Group       | Example actions                                                                    |
+| ----------- | ---------------------------------------------------------------------------------- |
+| 👤 Users    | `get_users`, `get_user`, `create_user`, `edit_user`, `delete_user`                 |
+| 📺 Lines    | `get_lines`, `get_line`, `create_line`, `edit_line`, `disable_line`, `enable_line` |
+| 📡 Streams  | `get_streams`, `get_stream`, `create_stream`, `start_stream`, `stop_stream`        |
+| 🎬 Movies   | `get_movies`, `get_movie`, `create_movie`, `start_movie`, `stop_movie`             |
+| 📚 Series   | `get_series_list`, `get_series`, `create_series`, `edit_series`                    |
+| 🧱 Bouquets | `get_bouquets`, `get_bouquet`, `create_bouquet`, `edit_bouquet`                    |
+| 🖥️ Servers | `get_servers`, `get_server`, `get_server_stats`, `reload_nginx`                    |
+| 🧾 Logs     | `activity_logs`, `live_connections`, `client_logs`, `stream_errors`                |
+| 🛡️ Blocks  | `get_blocked_ips`, `add_blocked_ip`, `flush_blocked_ips`                           |
 
 Full reference:
 
@@ -229,22 +225,27 @@ postman/xui-one-admin-api.postman_collection.json
 
 Suggested Postman environment variables:
 
-| Variable | Example |
-|---|---|
-| `base_url` | `https://PANEL-DOMAIN:9000/ACCESSCODE/` |
-| `api_key` | `YOUR_ADMIN_API_KEY` |
-| `server_id` | `1` |
+| Variable    | Example                                 |
+| ----------- | --------------------------------------- |
+| `base_url`  | `https://PANEL-DOMAIN:9000/ACCESSCODE/` |
+| `api_key`   | `YOUR_ADMIN_API_KEY`                    |
+| `server_id` | `1`                                     |
 
 ---
 
-## 🪟 Uploading to GitHub from Windows
+## ⬆️ Uploading to GitHub
 
-If GitHub web upload skips hidden files such as `.github`, `.gitignore`, or `.env.example`, use the included Windows helpers:
+If GitHub web upload skips hidden files such as `.github`, `.gitignore`, or `.env.example`, use Git from the command line instead.
 
-```text
-INSTALL_GIT_WINDOWS.bat
-CHECK_GIT_WINDOWS.bat
-UPLOAD_TO_GITHUB_WINDOWS.bat
+Basic upload flow:
+
+```bash
+git init
+git branch -M main
+git add -A
+git commit -m "Initial commit"
+git remote add origin https://github.com/YOUR_USERNAME/xui-one-admin-api-examples.git
+git push -u origin main
 ```
 
 Step-by-step guide:
@@ -255,13 +256,13 @@ Step-by-step guide:
 
 ## 🔐 Security notes
 
-- Do not upload your real API key to GitHub.
-- Do not commit your `.env` file.
-- Restrict the Admin API access code to trusted IP addresses whenever possible.
-- Use a dedicated access code for Admin API calls.
-- Use HTTPS in production.
-- Use `curl -k` only for testing self-signed certificates.
-- Treat powerful actions such as `mysql_query`, `delete_*`, `kill_pid`, and `edit_settings` with extreme caution.
+* Do not upload your real API key to GitHub.
+* Do not commit your `.env` file.
+* Restrict the Admin API access code to trusted IP addresses whenever possible.
+* Use a dedicated access code for Admin API calls.
+* Use HTTPS in production.
+* Use `curl -k` only for testing self-signed certificates.
+* Treat powerful actions such as `mysql_query`, `delete_*`, `kill_pid`, and `edit_settings` with extreme caution.
 
 Detailed checklist:
 
@@ -271,13 +272,13 @@ Detailed checklist:
 
 ## 🧯 Troubleshooting
 
-| Problem | Likely cause | Suggested fix |
-|---|---|---|
-| `Access Denied` | Wrong access code or missing Admin API permission | Check the access code type and group permissions |
-| Empty response | Wrong port/domain or SSL issue | Verify HTTP/HTTPS, port, and access code path |
-| `Invalid API Key` | Wrong or expired API key | Generate a new API key from the admin profile |
-| `action not found` | Action name differs in your version | Inspect the panel network request and compare parameters |
-| SSL error | Self-signed certificate | Use `curl -k` for testing only; use a valid certificate in production |
+| Problem            | Likely cause                                      | Suggested fix                                                         |
+| ------------------ | ------------------------------------------------- | --------------------------------------------------------------------- |
+| `Access Denied`    | Wrong access code or missing Admin API permission | Check the access code type and group permissions                      |
+| Empty response     | Wrong port/domain or SSL issue                    | Verify HTTP/HTTPS, port, and access code path                         |
+| `Invalid API Key`  | Wrong or expired API key                          | Generate a new API key from the admin profile                         |
+| `action not found` | Action name differs in your version               | Inspect the panel network request and compare parameters              |
+| SSL error          | Self-signed certificate                           | Use `curl -k` for testing only; use a valid certificate in production |
 
 Detailed guide:
 
