@@ -258,7 +258,7 @@ git init
 git branch -M main
 git add -A
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/xui-one-admin-api-examples.git
+git remote add origin https://github.com/rootwcore/xui-one-admin-api-examples.git
 git push -u origin main
 ```
 
