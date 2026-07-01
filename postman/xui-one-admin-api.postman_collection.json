@@ -1,0 +1,175 @@
+{
+  "info": {
+    "name": "XUI.ONE Admin API Examples",
+    "description": "Postman collection for testing common XUI.ONE Admin API actions. Use only on panels you own or are authorized to manage.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://PANEL-DOMAIN:9000/ACCESSCODE/"
+    },
+    {
+      "key": "api_key",
+      "value": "YOUR_ADMIN_API_KEY"
+    },
+    {
+      "key": "server_id",
+      "value": "1"
+    },
+    {
+      "key": "line_id",
+      "value": "123"
+    },
+    {
+      "key": "stream_id",
+      "value": "10"
+    }
+  ],
+  "item": [
+    {
+      "name": "Users - get_users",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=get_users",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "get_users"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lines - get_lines",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=get_lines",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "get_lines"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Lines - get_line",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=get_line&id={{line_id}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "get_line"
+            },
+            {
+              "key": "id",
+              "value": "{{line_id}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Streams - get_streams",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=get_streams",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "get_streams"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Streams - start_stream",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=start_stream&id={{stream_id}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "start_stream"
+            },
+            {
+              "key": "id",
+              "value": "{{stream_id}}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Server - get_server_stats",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{base_url}}?api_key={{api_key}}&action=get_server_stats&server_id={{server_id}}",
+          "host": [
+            "{{base_url}}"
+          ],
+          "query": [
+            {
+              "key": "api_key",
+              "value": "{{api_key}}"
+            },
+            {
+              "key": "action",
+              "value": "get_server_stats"
+            },
+            {
+              "key": "server_id",
+              "value": "{{server_id}}"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

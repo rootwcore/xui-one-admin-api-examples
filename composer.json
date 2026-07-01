@@ -1,0 +1,16 @@
+{
+  "name": "community/xui-one-admin-api-examples",
+  "description": "XUI.ONE Admin API examples and minimal PHP client.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/php/"
+    ]
+  }
+}

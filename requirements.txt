@@ -1,0 +1,2 @@
+# This project uses Python standard library only.
+# Optional: install requests and adapt the client if you prefer requests-based calls.

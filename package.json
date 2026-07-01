@@ -1,0 +1,22 @@
+{
+  "name": "xui-one-admin-api-examples",
+  "version": "1.0.0",
+  "description": "XUI.ONE Admin API examples, action reference, and minimal client snippets.",
+  "type": "module",
+  "scripts": {
+    "example:lines": "node examples/javascript/list-lines.mjs",
+    "example:stats": "node examples/javascript/get-server-stats.mjs"
+  },
+  "keywords": [
+    "xui-one",
+    "xui",
+    "admin-api",
+    "iptv",
+    "php",
+    "python",
+    "javascript",
+    "curl"
+  ],
+  "author": "",
+  "license": "MIT"
+}
