@@ -28,6 +28,20 @@ This repository includes a categorized **XUI.ONE Admin API action reference**, r
 
 ---
 
+## 📚 Complete API action list
+
+> [!IMPORTANT]
+> Looking for the full list of XUI.ONE Admin API actions?
+> The complete categorized action reference is available here:
+
+👉 **[`docs/API_ACTIONS.md`](docs/API_ACTIONS.md)**
+
+This file contains Admin API actions grouped by feature area, including users, lines, MAG, Enigma, bouquets, packages, streams, channels, movies, series, episodes, servers, logs, blocked IPs, settings, maintenance tools, and more.
+
+Action names and required parameters may differ between XUI.ONE versions. If an action does not work on your installation, inspect the request from your browser developer tools and compare the parameters used by your panel.
+
+---
+
 ## 🧭 Repository structure
 
 ```text
